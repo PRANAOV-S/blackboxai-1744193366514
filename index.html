@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TripAdvisor Clone</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        .tripadvisor-green {
+            background-color: #34e0a1;
+        }
+        .tripadvisor-dark-green {
+            background-color: #00aa6c;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+    <!-- Header -->
+    <header class="bg-white shadow-md">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <div class="tripadvisor-green p-2 rounded-full">
+                        <i class="fas fa-plane text-white text-xl"></i>
+                    </div>
+                    <span class="ml-2 text-xl font-bold text-gray-800">tripadvisor</span>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="hidden md:flex space-x-6">
+                    <a href="#" class="text-gray-700 hover:text-green-600">
+                        <i class="fas fa-pen-fancy mr-1"></i> Review
+                    </a>
+                    <a href="#" class="text-gray-700 hover:text-green-600">
+                        <i class="fas fa-heart mr-1"></i> Trips
+                    </a>
+                    <a href="#" class="text-gray-700 hover:text-green-600">
+                        <i class="fas fa-bell mr-1"></i> Alerts
+                    </a>
+                    <a href="#" class="text-gray-700 hover:text-green-600">
+                        <i class="fas fa-user mr-1"></i> Sign In
+                    </a>
+                </nav>
+            </div>
+
+            <!-- Search Bar -->
+            <div class="mt-4 relative">
+                <div class="flex items-center bg-white border border-gray-300 rounded-full p-2 shadow-sm">
+                    <input type="text" placeholder="Where to?" class="flex-grow px-4 py-2 focus:outline-none">
+                    <button class="tripadvisor-green text-white px-6 py-2 rounded-full font-medium">
+                        Search
+                    </button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <!-- Hero Section -->
+        <section class="mb-12">
+            <div class="bg-white rounded-lg shadow-md p-6">
+                <h1 class="text-3xl font-bold text-gray-800 mb-4">Find hotels, restaurants, and attractions</h1>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <!-- Hotel Card -->
+                    <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
+                        <div class="tripadvisor-green text-white p-3 rounded-full w-12 h-12 flex items-center justify-center mb-3">
+                            <i class="fas fa-hotel text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Hotels</h3>
+                        <p class="text-gray-600">Search for hotels with our millions of reviews</p>
+                    </div>
+                    
+                    <!-- Restaurant Card -->
+                    <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
+                        <div class="tripadvisor-green text-white p-3 rounded-full w-12 h-12 flex items-center justify-center mb-3">
+                            <i class="fas fa-utensils text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Restaurants</h3>
+                        <p class="text-gray-600">Find the best places to eat in your destination</p>
+                    </div>
+                    
+                    <!-- Things to Do Card -->
+                    <div class="border border-gray-200 rounded-lg p-4 hover:shadow-lg transition-shadow">
+                        <div class="tripadvisor-green text-white p-3 rounded-full w-12 h-12 flex items-center justify-center mb-3">
+                            <i class="fas fa-map-marked-alt text-xl"></i>
+                        </div>
+                        <h3 class="font-bold text-lg mb-2">Things to Do</h3>
+                        <p class="text-gray-600">Discover the top attractions and activities</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Destinations Section -->
+        <section class="mb-12">
+            <h2 class="text-2xl font-bold text-gray-800 mb-6">Popular destinations</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                <!-- Destination Cards -->
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/7b/99/6c/london.jpg" alt="London" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">London</h3>
+                        <p class="text-gray-600">United Kingdom</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/7b/99/6c/london.jpg" alt="Paris" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">Paris</h3>
+                        <p class="text-gray-600">France</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/7b/99/6c/london.jpg" alt="Rome" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">Rome</h3>
+                        <p class="text-gray-600">Italy</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white rounded-lg shadow-md overflow-hidden">
+                    <img src="https://media-cdn.tripadvisor.com/media/photo-s/1a/7b/99/6c/london.jpg" alt="New York City" class="w-full h-48 object-cover">
+                    <div class="p-4">
+                        <h3 class="font-bold text-lg mb-2">New York City</h3>
+                        <p class="text-gray-600">United States</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <h3 class="font-bold text-lg mb-4">About Tripadvisor</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">About Us</a></li>
+                        <li><a href="#" class="hover:underline">Press</a></li>
+                        <li><a href="#" class="hover:underline">Resources</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Explore</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Write a Review</a></li>
+                        <li><a href="#" class="hover:underline">Add a Place</a></li>
+                        <li><a href="#" class="hover:underline">Join</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Do Business With Us</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:underline">Owners</a></li>
+                        <li><a href="#" class="hover:underline">Business Advantage</a></li>
+                        <li><a href="#" class="hover:underline">Sponsored Placements</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="font-bold text-lg mb-4">Get the App</h3>
+                    <div class="flex space-x-2">
+                        <a href="#" class="bg-black text-white px-3 py-2 rounded flex items-center">
+                            <i class="fab fa-apple mr-2"></i> App Store
+                        </a>
+                        <a href="#" class="bg-black text-white px-3 py-2 rounded flex items-center">
+                            <i class="fab fa-google-play mr-2"></i> Google Play
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-6 text-sm text-gray-400">
+                <p>© 2023 Tripadvisor LLC All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
